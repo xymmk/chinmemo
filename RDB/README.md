@@ -17,9 +17,9 @@ Kyoto 3-1-1 1007			bbb		100cm			145-0001
 (address)      → postalCode (存在局部依赖关系,不符合2NF)
 
 3NF:既不存在传递依赖关系，也不存在局部依赖关系
-id		Name		deptNo		deptName		id	Name	| deptNo	deptName
-1		aaa		1		Japan		→	1	aaa	| 1		Japan
-2		bbb		2		China			2	bbb	| 2		China
+id  Name  deptNo  deptName    id Name * deptNo deptName
+1   aaa   1       Japan    →  1 aaa   * 1      Japan
+2   bbb   2       China       2	bbb   * 2      China
 
 id → Name
 id → deptNo → deptName (存在传递依赖关系,不符合3NF)
