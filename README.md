@@ -1,2 +1,0 @@
-# chinmemo
-memo something
