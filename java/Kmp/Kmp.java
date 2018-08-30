@@ -25,7 +25,6 @@ public class Kmp {
 		while(i < contextString.length) {
 			if(desString[j] == contextString[i]) {
 				if(j == desString.length - 1) {
-					System.out.println("aaaa" + flag);
 					flag = i - j;
 					break;
 				}
