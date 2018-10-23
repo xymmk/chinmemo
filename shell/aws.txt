@@ -1,0 +1,13 @@
+aws ec2 run-instances --image-id  --profile (profile_name) --subnet-id  --key-name (tag_key_name)  --instance-ids
+
+aws ec2 start-instances --instance-ids  --profile
+
+aws ec2 stop-instances  —-instance-ids  --profile
+
+aws ec2 modify-instance-attribute --instance-id  --groups --profile
+
+aws ec2 describe-security-groups --profile
+
+aws ec2 run-instances --image-id --subnet-id --key-name --security-group-ids --profile --user-data file://(path)
+
+aws rds describe-db-snapshots --include-shared  --snapshot-type "(type_name)" | jq '.DBSnapshots | [last]'

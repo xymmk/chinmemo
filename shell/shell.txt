@@ -1,0 +1,66 @@
+ssh:
+	ssh-keygen -t rsa
+ssl:
+	openssl req -new -x509 -keyout ca.key -out ca.crt -config openssl.cnf
+tee:
+	tee -a (filename)
+find:
+	find / -name (filename)
+pwd:
+	pwd
+cat:
+	cat
+scp:
+	scp (username)@(remote_host):(path) (path)
+	scp -P (port_number) -o (private_key) (path) (username)@(hostip):(path)
+
+curl:
+	curl -H "(header)" -V
+
+systemctl:
+	systemctl restart (server_name).service
+	systemctl enable (server_name).service
+
+process:
+	ps aux | grep (process_name)
+
+wget:
+	wget (url)
+
+port number:
+	lsof -i (port_number)
+
+wc
+	wc -l (file_name)
+
+sudo keytool -import -alias localhost -keystore /usr/lib/jvm/java-8-oracle/jre/lib/security/cacerts  -file ../(path)localhost.crt
+
+tar:
+	tar -cvf jpg.tar *.jpg //将目录里所有jpg文件打包成tar.jpg
+
+	tar -czf jpg.tar.gz *.jpg   //将目录里所有jpg文件打包成jpg.tar后，并且将其用gzip压缩，生成一个gzip压缩过的包，命名为jpg.tar.gz
+
+	tar -cjf jpg.tar.bz2 *.jpg //将目录里所有jpg文件打包成jpg.tar后，并且将其用bzip2压缩，生成一个bzip2压缩过的包，命名为jpg.tar.bz2
+
+	tar -cZf jpg.tar.Z *.jpg   //将目录里所有jpg文件打包成jpg.tar后，并且将其用compress压缩，生成一个umcompress压缩过的包，命名为jpg.tar.Zrar a jpg.rar *.jpg //rar格式的压缩，需要先下载rar for linux zip jpg.zip *.jpg //zip格式的压缩，需要先下载zip for linux
+
+	tar -xvf file.tar //解压 tar包
+
+	tar -xzvf file.tar.gz //解压tar.gz
+
+	tar -xjvf file.tar.bz2   //解压 tar.bz2
+
+	tar -xZvf file.tar.Z   //解压tar.Z
+
+	unrar e file.rar //解压rar
+
+	unzip file.zip //解压zip
+
+	tar --strip-components 1 去掉一层目录
+
+	sudo systemctl enable mongodb 永久起動
+	sudo systemctl disable mongodb 永久起動削除
+	sudo systemctl status mongodb	ステータス表示
+
+******************************mac home 権限***********************************
+	cd /etc/auto_master

@@ -1,0 +1,54 @@
+******************************github コメント************************************
+
+repositories clone:
+	git clone (url copy)
+
+branch list:
+	git branch -a
+
+branch change:
+	git checkout (branch name)
+
+branch local create:
+	git branch (new branch name)
+
+branch local delete:
+	git branch -d (branch name)
+
+git commit:
+	git add (file name)
+	git commit -m “command”
+	git push
+
+git remote show origin
+
+git checkout [コミット番号] [ファイルパス]
+
+git push --set-upstream testOrigin master
+
+git reflog	commit記録
+git checkout ーー ファイル名
+
+merge fork
+git remote add username https://github.com/xxx.git
+git fetch username
+git merge username/master
+git checkout <ブランチ名> -- <ファイル名>
+
+create nil branch:
+
+git checkout --orphan <branch名>
+git rm -rf .
+
+fork先のソースを新しいブランチにダウロードする
+git checkout -b 本地分支名x origin/远程分支名x
+
+ユーザ設定:git config --global --edit
+
+git remote set-url origin https://USERNAME@github.com/USERNAME/PROJECTNAME.git
+
+git log --pretty=oneline --abbrev-commit
+
+git rebase <commit id> —onto <branch name>
+
+git rebase -i <commit id>

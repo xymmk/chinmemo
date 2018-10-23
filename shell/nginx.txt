@@ -1,0 +1,4 @@
+******************************nginx ***************************************
+sudo nginx -s reload; 再起動
+sudo nginx -s stop;   ストップ
+sudo nginx 	      起動
