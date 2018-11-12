@@ -70,3 +70,6 @@ netstat -nr
 
 ********************************************************************
 brew services [service_name] [restart/start/stop]
+
+******************************maven command**************************************
+mvn install -Dmaven.test.skip=true;
