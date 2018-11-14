@@ -67,6 +67,9 @@ tar:
 	
 ******************************************************************
 netstat -nr
+netstat -a
+nslookup www.baidu.com
+lsof -n -i:5432
 
 ********************************************************************
 brew services [service_name] [restart/start/stop]
