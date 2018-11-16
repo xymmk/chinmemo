@@ -76,3 +76,10 @@ brew services [service_name] [restart/start/stop]
 
 ******************************maven command**************************************
 mvn install -Dmaven.test.skip=true;
+
+******************************kill process**************************************
+\                            
+for pidd in `ps aux | grep lotus-cms | awk '{print$2}'`
+do
+kill $pidd
+done
