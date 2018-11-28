@@ -83,3 +83,5 @@ for pidd in `ps aux | grep lotus-cms | awk '{print$2}'`
 do
 kill $pidd
 done
+
+loopCnt=$(( loopCnt + 1 ))
