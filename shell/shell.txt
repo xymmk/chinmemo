@@ -85,3 +85,7 @@ kill $pidd
 done
 
 loopCnt=$(( loopCnt + 1 ))
+
+git remote set-url origin https://xymmk@github.com/xymmk/chinmemo.git
+
+git push -u origin master
