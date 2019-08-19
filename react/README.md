@@ -4,13 +4,13 @@ touch webpack.config.js<br>
 ```
 // webpack.config.js
 module.exports = {
- entry: ¡®./src/client.js¡¯,
+ entry: â€˜./src/client.jsâ€™,
  output: {
-   path: __dirname + ¡®/public¡¯,
-   fiename: ¡®client.js¡¯,
+   path: __dirname + â€˜/publicâ€™,
+   fiename: â€˜client.jsâ€™,
  },
 };
 ```
 npm install -g webpack-dev-server<br>
 npm run start<br>
- [²Î¿¼](https://qiita.com/ftyabu/items/240280617a69777a2fd4)
+ [å‚è€ƒ](https://qiita.com/ftyabu/items/240280617a69777a2fd4)
