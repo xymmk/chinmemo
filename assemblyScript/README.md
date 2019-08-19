@@ -19,22 +19,22 @@ touch index.html
   });
 </script>A
 ```
-¥Ö¥é¥¦¥¶©`´_ÕJ<br>
+ãƒ–ãƒ©ã‚¦ã‚¶ãƒ¼ç¢ºèª<br>
 ```
-# Python2¤ÎˆöºÏ
+# Python2ã®å ´åˆ
 $ python -m SimpleHTTPServer 8080
 
-# Python3¤ÎˆöºÏ
+# Python3ã®å ´åˆ
 $ python3 -m http.server 8080
 
-# Ruby¤ÎˆöºÏ
+# Rubyã®å ´åˆ
 $ ruby -run -e httpd . -p 8080
 
-# node.js¤ÎˆöºÏ
+# node.jsã®å ´åˆ
 $ npx http-server -p 8080
 ```
 
-node.js¤òÊ¹¤¦ˆöºÏ(index.htmlŸo¤·¤Ç¤â´óÕÉ·ò)<br>
+node.jsã‚’ä½¿ã†å ´åˆ(index.htmlç„¡ã—ã§ã‚‚å¤§ä¸ˆå¤«)<br>
 ```
 const wasm = require('./index.js');
 ```
